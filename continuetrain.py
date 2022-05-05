@@ -4,7 +4,7 @@ from system import System
 import pandas as pd
 n_test = 6
 system_type = 'Reacher-v2'
-system = pd.read_pickle(r'Reacher-v2_6_2.p')
+system = pd.read_pickle(r'model_saves/Reacher-v2_6_2.p')
 tr_epsds = 200
 epsd_steps = 1000
 mean_rewards = []
