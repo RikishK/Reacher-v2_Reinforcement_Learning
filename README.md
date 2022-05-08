@@ -17,7 +17,7 @@ per step, a done bool
 6 = angular velocity of the first arm    
 7 = angular velocity of the second arm  
 8 = x-value of position_fingertip - position_target    
-9 = y-value of position_fingertip - position_target
+9 = y-value of position_fingertip - position_target      
 10 = z-value of position_fingertip - position_target (0 since reacher is 2d and z is same for both)
 
 ## Wrapper Changes to Accomodate the task
