@@ -24,7 +24,7 @@ per step, a done bool
 The original reacher-v2 environment does not provide a 'True' value for done when the fingertip reaches the target.
 This is an issue as we want to reward the model for reaching the target and also reset the environment when it does.
 So a wrapper functionality was added to check the values of the 8th and 9th index of the 'ndarray' which correspond to the distance
-between the finger tip and the target. We check to see of both these values are between -0.01 and 0.01 to see if the model has reached 
+between the finger tip and the target. The model checks to see if both these values are between -0.01 and 0.01 to see if the model has reached 
 the target. If so, the reward for the step is changed to 50 and 'done' is set to 'True' causing the episode to end and a new one to start.
 
 
