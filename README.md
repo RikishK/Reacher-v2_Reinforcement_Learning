@@ -21,7 +21,7 @@ per step, a done bool
 10 = z-value of position_fingertip - position_target (0 since reacher is 2d and z is same for both)
 
 ## Wrapper Changes to Accomodate the task
-The original reacher-v2 ebvironment does not provide a 'True' value for done when the fingertip reaches the target.
+The original reacher-v2 environment does not provide a 'True' value for done when the fingertip reaches the target.
 This is an issue as we want to reward the model for reaching the target and also reset the environment when it does.
 So a wrapper functionality was added to check the values of the 8th and 9th index of the 'ndarray' which correspond to the distance
 between the finger tip and the target. We check to see of both these values are between -0.01 and 0.01 to see if the model has reached 
