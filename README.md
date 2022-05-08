@@ -9,14 +9,14 @@ per step, a done bool
 
 ### What Each Value Means
 0 = Cosine of the angle of the first arm   
-1 = cosine of the angle of the second arm
+1 = Cosine of the angle of the second arm   
 2 = sine of the angle of the first arm  
 3 = sine of the angle of the second arm  
 4 = x-coorddinate of the target 
 5 = y-coorddinate of the target  
 6 = angular velocity of the first arm    
 7 = angular velocity of the second arm  
-8 = x-value of position_fingertip - position_target 
+8 = x-value of position_fingertip - position_target    
 9 = y-value of position_fingertip - position_target
 10 = z-value of position_fingertip - position_target (0 since reacher is 2d and z is same for both)
 
